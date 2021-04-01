@@ -12,6 +12,10 @@ kubectl config use-context ${name}
 # use manul config to different cluster
 kubectl --kubeconfig ${path to kubeconfig} --context ${kubeconf name}
 
+# remove no use context or cluster
+
+kubectl config delete-cluster/delete-context ${cluster name}
+
 # get namespace
 kubectl get ns/namespace
 
