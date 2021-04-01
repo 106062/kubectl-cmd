@@ -9,6 +9,9 @@ kubectl config get-contexts
 # 切換 cluster
 kubectl config use-context ${name}
 
+# use manul config to different cluster
+kubectl --kubeconfig ${path to kubeconfig} --context ${kubeconf name}
+
 # get namespace
 kubectl get ns/namespace
 
